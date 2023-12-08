@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div>
-         Footer
+         Oh My Cat &type 2023 created by Alex Nguyen and Justin Pinkard
         </div>
     )
 }

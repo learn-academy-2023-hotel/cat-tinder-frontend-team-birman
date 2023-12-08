@@ -1,5 +1,5 @@
 import React from 'react'
-import './NotFound.css'
+import '../App.css'
 import back from '../assets/404Background.png'
 
 const NotFound = () => {
