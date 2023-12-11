@@ -1,13 +1,15 @@
 import React from 'react'
-import { Nav, NavItem } from 'reactstrap'
+import { Nav, NavItem, Navbar } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
-import catLogo from "../assets/OhMyCatLogo.png"
+import catLogo from "../assets/OhMyCatLogoText.png"
+import '../App.css'
 
 const Header = () => {
     return (
         <Nav
         justified
-        pills
+        // pills
+        className='header'
         >
         <NavItem>
             <NavLink
@@ -22,14 +24,13 @@ const Header = () => {
         </NavItem>
         <NavItem>
             <NavLink 
-            to="/catindex">
+            to="/catindex" className="nav-link">
             Pics of Cats
             </NavLink>
         </NavItem>
         <NavItem>
             <NavLink
-            to="/catshow"
-            >
+            to="/catshow" className="nav-link">
             Purr Show
             </NavLink>
         </NavItem>
