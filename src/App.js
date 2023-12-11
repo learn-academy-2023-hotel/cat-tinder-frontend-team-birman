@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import CatEdit from "./pages/CatEdit"
@@ -21,7 +21,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catindex" element={<CatIndex cats={cats}/>} />
-        {/* <Route path="/catshow/:id" element={<CatShow cats={cats}/>} /> */}
+        <Route path="/catshow/:id" element={<CatShow cats={cats}/>} />
         <Route path="/catnew" element={<CatNew />} />
         <Route path="/catedit" element={<CatEdit />} />
         <Route path="*" element={<NotFound />} />
