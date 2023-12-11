@@ -1,20 +1,22 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import catLogo from "../assets/OhMyCatLogo.png"
+import catLogo from "../assets/OhMyCatLogoText.png"
 
 const Footer = () => {
     return (
-        <div>
-         Oh My Cat &copy; 2023 created by <a href="https://www.linkedin.com/in/alexander-d-nguyen" target="_blank">Alex Nguyen</a> and <a href="https://www.linkedin.com/in/jdpinkard" target="_blank">Justin Pinkard</a>
-         <NavLink
+        <div className='footer'>
+          
+
+                      <NavLink
             to="/"
             >
             <img
             src={catLogo}
-            alt="Cat Tinder logo with outline of cat"
+            alt="Cat Tinder logo"
             className="cat-logo"
             />
             </NavLink>
+            <p>&copy; 2023 created by <a href="https://www.linkedin.com/in/alexander-d-nguyen" target="_blank" className='foot-link'>Alex Nguyen</a> and <a href="https://www.linkedin.com/in/jdpinkard" target="_blank" className='foot-link'>Justin Pinkard</a> </p>
         </div>
     )
 }
