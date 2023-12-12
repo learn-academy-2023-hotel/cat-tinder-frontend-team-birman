@@ -5,11 +5,13 @@ import { Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
 const CatIndex = ({ cats }) => {
   return (
     <div className="cards-index">
+      <div className="cards-index-margin">
       {cats?.map((cat, index) => {
         return (
           <Card
             style={{
               width: "18rem",
+              margin: 30,
             }}
             key={index}
           >
@@ -27,6 +29,7 @@ const CatIndex = ({ cats }) => {
           </Card>
         )
       })}
+      </div>
     </div>
   )
 }
