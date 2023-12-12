@@ -7,7 +7,7 @@ import '../App.css'
 const Header = () => {
     return (
         <Nav
-        justified
+        // justified
         // pills
         className='header'
         >

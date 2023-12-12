@@ -18,8 +18,8 @@ describe("<Footer />", () => {
             </BrowserRouter>
         )
         const logo = screen.getByRole("img")
-        expect(logo).toHaveAttribute("src", "OhMyCatLogo.png")
-        expect(logo).toHaveAttribute("alt", "Cat Tinder logo with outline of cat")
+        expect(logo).toHaveAttribute("src", "OhMyCatLogoText.png")
+        expect(logo).toHaveAttribute("alt", "Cat Tinder logo")
     })
     it("has clickable links", () => {
         render(

@@ -20,8 +20,8 @@ const CatIndex = ({ cats }) => {
                 {cat.age}
               </CardSubtitle>
 
-              <NavLink to={`/catshow/${cat.id}`} className="nav-link">
-                Details
+              <NavLink to={`/catshow/${cat.id}`} className="index-nav-link">
+                <p className="black">Details</p>
               </NavLink>
             </CardBody>
           </Card>
