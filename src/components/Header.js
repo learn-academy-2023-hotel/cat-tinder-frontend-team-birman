@@ -30,8 +30,8 @@ const Header = () => {
         </NavItem>
         <NavItem>
             <NavLink
-            to="/catshow" className="nav-link">
-            Purr Show
+            to="/catnew" className="nav-link">
+            New Mew
             </NavLink>
         </NavItem>
         </Nav>
