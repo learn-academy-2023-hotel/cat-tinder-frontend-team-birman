@@ -18,6 +18,7 @@ const App = () => {
   return (
     <>
       <Header />
+      <div className="app-background">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catindex" element={<CatIndex cats={cats}/>} />
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/catedit" element={<CatEdit />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </div>
       <Footer />
     </>
   )

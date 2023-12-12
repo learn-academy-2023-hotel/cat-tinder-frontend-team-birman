@@ -34,9 +34,14 @@
 .app {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
-  color: #fff;
   height: 100vh;
   width: 100vw;
+}
+
+.app-background {
+  background-image: linear-gradient(to bottom right, #18A0BE, #622D89);
+  height:calc(100vh - 110px);
+
 }
 
 /* HEADER */
@@ -46,7 +51,7 @@
   /* display: flex; */
   display: flex;
   justify-content: space-around;
-  background-image: linear-gradient(to right, #18A0BE, #622D89);
+  background-image: linear-gradient(to bottom, #18A0BE, #622D89);
 }
 
 .cat-logo {
@@ -66,43 +71,61 @@
   animation: fade-in-from-top 0.5s;
 }
 
+.nav-link:visited {
+  color: #fff;
+}
+
 .nav-link:hover {
   color: #b1b6c8;
 }
 
-.nav-link:focus {
-  color: #b1b6c8;
-}
 
 /* CAT INDEX */
 
 .cards-index {
-  background-color: #180344;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+.black { /* FIX ME */
+  color: black;
+}
+
+.index-nav-link {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.index-nav-link:visited {
+  color: #fff;
+}
+
+.index-nav-link:hover {
+  color: #b1b6c8;
+}
+
 /* CAT SHOW */
 
 .cat-show-cards {
-  margin: 30px;
-  background-color: #180344;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .cat-show-img {
-  width: 400px;
-  object-fit: cover;
+  margin: 20px;
+  max-width: 400px;
+  height: auto;
+  /* object-fit: cover; */
   border-radius: 20px;
 }
 
 /* NOT FOUND */
 
 .not-background {
-  background-color: #180344;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +141,7 @@
   height: 55px;
   display: flex;
   /* background-image: linear-gradient(to right, #18A0BE, #622D89); */
-  background-image: linear-gradient(to right, #622D89, #18A0BE);
+  background-image: linear-gradient(to bottom, #622D89, #18A0BE);
   justify-content: center;
 }
 
@@ -130,14 +153,22 @@
   font-weight: 600;
 }
 
+.footer-cat-logo {
+  margin-left: 20px;
+  margin-right: 0px;
+  height: 40px;
+  object-fit: cover;
+  margin-top: 8px;
+}
+
 .foot-link {
   color: #fff;
 }
 
-.foot-link:hover {
-  color: #b1b6c8;
+.foot-link:focus {
+  color: #fff;
 }
 
-.foot-link:focus {
+.foot-link:hover {
   color: #b1b6c8;
 }
