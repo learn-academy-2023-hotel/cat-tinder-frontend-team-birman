@@ -123,16 +123,39 @@
 /* CAT NEW */
 
 .cat-new-form {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+.cat-new-form h1 {
+  padding: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.cat-new-form button {
+  background-image: linear-gradient(to top, #572d75,#9167ad,#c18ae6);
+}
+
+.cat-new-form button:hover {
+  background-image: linear-gradient(to top, #763c9f,#ae7bcf,#c18ae6);
 }
 
 .cat-new-form-group Input {
-  /* width: 50%; */
+  margin: auto;
+  max-width: 400px;
+  width: 50vw;
+}
+
+.cat-new-form-group Input::placeholder {
+  opacity: 0.7;
 }
 
 .cat-new-form-group Label {
   color: white;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* CAT SHOW */

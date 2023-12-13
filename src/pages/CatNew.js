@@ -24,6 +24,7 @@ const CatNew = ({ createCat }) => {
 
     return (
     <div className="cat-new-form">
+        <h1>Your New Mew!</h1>
     <Form>
         <FormGroup className="cat-new-form-group">
             <Label for="name">Name</Label>
@@ -33,6 +34,7 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.name}
+                placeholder='What is your name?'
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -43,6 +45,7 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.age}
+                placeholder='How old are you?'
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -53,6 +56,7 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.enjoys}
+                placeholder='What do you have fun doing?'
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -63,6 +67,7 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.image}
+                placeholder='https://i.imgur.com/HGAKgb6.jpeg'
             />
         </FormGroup>
     <Button onClick={handleSubmit} name="submit">Submit</Button>

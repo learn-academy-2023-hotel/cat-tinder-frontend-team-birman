@@ -25,7 +25,7 @@ const Header = () => {
         <NavItem>
             <NavLink 
             to="/catindex" className="nav-link">
-            Pics of Cats
+            Cuddle Finder
             </NavLink>
         </NavItem>
         <NavItem>
