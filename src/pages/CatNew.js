@@ -23,9 +23,9 @@ const CatNew = ({ createCat }) => {
     }
 
     return (
-    <div>
+    <div className="cat-new-form">
     <Form>
-        <FormGroup>
+        <FormGroup className="cat-new-form-group">
             <Label for="name">Name</Label>
             <Input
                 id="name"
@@ -35,7 +35,7 @@ const CatNew = ({ createCat }) => {
                 value={newCat.name}
             />
         </FormGroup>
-        <FormGroup>
+        <FormGroup className="cat-new-form-group">
             <Label for="age">Age</Label>
             <Input
                 id="age"
@@ -45,7 +45,7 @@ const CatNew = ({ createCat }) => {
                 value={newCat.age}
             />
         </FormGroup>
-        <FormGroup>
+        <FormGroup className="cat-new-form-group">
             <Label for="enjoys">Enjoys</Label>
             <Input
                 id="enjoys"
@@ -55,7 +55,7 @@ const CatNew = ({ createCat }) => {
                 value={newCat.enjoys}
             />
         </FormGroup>
-        <FormGroup>
+        <FormGroup className="cat-new-form-group">
             <Label for="image">Image</Label>
             <Input
                 id="image"
@@ -65,8 +65,8 @@ const CatNew = ({ createCat }) => {
                 value={newCat.image}
             />
         </FormGroup>
-    </Form>
     <Button onClick={handleSubmit} name="submit">Submit</Button>
+    </Form>
     </div>
     )
 }

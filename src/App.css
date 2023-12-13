@@ -120,6 +120,21 @@
   color: #b1b6c8;
 }
 
+/* CAT NEW */
+
+.cat-new-form {
+  display: flex;
+  justify-content: center;
+}
+
+.cat-new-form-group Input {
+  /* width: 50%; */
+}
+
+.cat-new-form-group Label {
+  color: white;
+}
+
 /* CAT SHOW */
 
 .cat-show-cards {

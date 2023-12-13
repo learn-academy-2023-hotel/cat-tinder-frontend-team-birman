@@ -1,19 +1,27 @@
 import { render, screen } from "@testing-library/react"
-import { BrowserRouter } from "react-router-dom"
-import CatNew from "../pages/CatNew"
+import { MemoryRouter, Routes, Route } from "react-router-dom"
+import mockCats from "../mockCats"
+import CatEdit from "../pages/CatEdit"
 
-describe("<CatNew />", () => {
+describe("<CatEdit />", () => {
 
-    const renderNew = () => {
-        render(
-            <BrowserRouter>
-                <CatNew />
-            </BrowserRouter>
+    const renderEdit = () => {
+        render (
+            <MemoryRouter initialEntries={['/catedit/1']}>
+                <Routes>
+                    <Route path="/catedit/:id" element={<CatEdit cats={mockCats} />} />
+                </Routes>
+            </MemoryRouter>
         )
     }
-    it("renders a new cat form", () => {
-        renderNew()
 
+    it("renders without crashing", () => {
+        renderEdit()
+    })
+
+    it("renders a cat edit form", () => {
+        renderEdit()
+        
         const nameInput = screen.getByRole("textbox", {
             name: /name/i
         })
@@ -36,7 +44,7 @@ describe("<CatNew />", () => {
     })
 
     it("has a form with entries for name, age, enjoys, image", () => {
-        renderNew()
+        renderEdit()
 
         const formName = screen.getByText(/name/i)
         expect(formName.getAttribute("For")).toEqual("name")
@@ -50,4 +58,5 @@ describe("<CatNew />", () => {
         const formImage = screen.getByText(/image/i)
         expect(formImage.getAttribute("For")).toEqual("image")
     })
+
 })
