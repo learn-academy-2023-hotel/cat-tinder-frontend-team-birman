@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavItem, Navbar } from 'reactstrap'
+import { Nav, NavItem } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 import catLogo from "../assets/OhMyCatLogoText.png"
 import '../App.css'

@@ -34,7 +34,7 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.name}
-                placeholder='What is your name?'
+                placeholder="What is your cat's name?"
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -45,7 +45,7 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.age}
-                placeholder='How old are you?'
+                placeholder='How old is your cat?'
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -56,7 +56,7 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.enjoys}
-                placeholder='What do you have fun doing?'
+                placeholder='What does your kitty like to do for fun?'
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">

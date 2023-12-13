@@ -1,11 +1,11 @@
 import React from 'react'
 import '../App.css'
-import back from '../assets/4041.png'
+import Error from '../assets/404.png'
 
 const NotFound = () => {
     return (
         <div className='not-background'>
-            <img src={back} alt="404 Error" />
+            <img src={Error} alt="404 Error" />
         </div>
     )
 }
