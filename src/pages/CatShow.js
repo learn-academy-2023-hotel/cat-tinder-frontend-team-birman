@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Button} from "reactstrap"
 
-const CatShow = ({ cats }) => {
+const CatShow = ({ cats, deleteCat }) => {
     const navigate = useNavigate()
 
     const { id } = useParams()
@@ -13,7 +13,12 @@ const CatShow = ({ cats }) => {
     }
 
     const handleEditBack = () => {
-        navigate(`/catindex`)
+        navigate('/catindex')
+    }
+
+    const handleDeleteBack = () => {
+        deleteCat(currentCat.id)
+        navigate('/catindex')
     }
 
     return (
@@ -32,12 +37,9 @@ const CatShow = ({ cats }) => {
                     <Button onClick={handleEdit} name="edit">Edit</Button>         
                     <Button onClick={handleEditBack} name="edit">Back</Button>
                 </div>
+                    <Button onClick={handleDeleteBack}>Delete</Button>
                 </>
             )}
-            {/* <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">
-                Edit Cat Profile
-            </NavLink> */}
-
         </main>
     )
 }
