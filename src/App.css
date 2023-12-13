@@ -195,10 +195,12 @@
 
 .cat-new-form button {
   background-image: linear-gradient(to top, #572d75,#9167ad,#c18ae6);
+  border: none;
 }
 
 .cat-new-form button:hover {
   background-image: linear-gradient(to top, #763c9f,#ae7bcf,#c18ae6);
+  border: none;
 }
 
 .cat-new-form-group Input {
@@ -266,6 +268,19 @@
 
 .cat-show-text h3 {
   color: #f8eef8;
+}
+
+.cat-show-cards button {
+  background-image: linear-gradient(to top, #572d75,#9167ad,#c18ae6);
+  border: none;
+  width: 100px;
+  margin: 15px 35px;
+
+}
+
+.cat-show-cards button:hover {
+  background-image: linear-gradient(to top, #763c9f,#ae7bcf,#c18ae6);
+  border: none;
 }
 
 /* NOT FOUND */

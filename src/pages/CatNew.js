@@ -54,10 +54,10 @@ const CatNew = ({ createCat }) => {
                 id="enjoys"
                 name="enjoys"
                 type="text"
-                maxLength={350}
+                maxLength={300}
                 onChange={handleChange}
                 value={newCat.enjoys}
-                placeholder='What does your kitty do for fun? (350 Chars Max)'
+                placeholder='What does your kitty do for fun? (300 Chars Max)'
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -71,7 +71,7 @@ const CatNew = ({ createCat }) => {
                 placeholder='https://i.imgur.com/HGAKgb6.jpeg'
             />
         </FormGroup>
-    <Button onClick={handleSubmit} name="submit">Submit</Button>
+        <Button onClick={handleSubmit} name="submit">Submit</Button>
     </Form>
     </div>
     )
