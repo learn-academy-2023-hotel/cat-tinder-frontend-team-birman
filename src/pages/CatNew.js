@@ -24,6 +24,7 @@ const CatNew = ({ createCat }) => {
 
     return (
     <div className="cat-new-form">
+        <h1>New Mew Profile</h1>
     <Form>
         <FormGroup className="cat-new-form-group">
             <Label for="name">Name</Label>
@@ -33,6 +34,7 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.name}
+                placeholder="What is your cat's name?"
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -43,6 +45,7 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.age}
+                placeholder='How old is your cat?'
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -51,8 +54,10 @@ const CatNew = ({ createCat }) => {
                 id="enjoys"
                 name="enjoys"
                 type="text"
+                maxLength={300}
                 onChange={handleChange}
                 value={newCat.enjoys}
+                placeholder='What does your kitty do for fun? (300 Chars Max)'
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -63,9 +68,10 @@ const CatNew = ({ createCat }) => {
                 type="text"
                 onChange={handleChange}
                 value={newCat.image}
+                placeholder='https://i.imgur.com/HGAKgb6.jpeg'
             />
         </FormGroup>
-    <Button onClick={handleSubmit} name="submit">Submit</Button>
+        <Button onClick={handleSubmit} name="submit">Submit</Button>
     </Form>
     </div>
     )
