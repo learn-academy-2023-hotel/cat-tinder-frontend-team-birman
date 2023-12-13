@@ -14,7 +14,11 @@ const CatShow = ({ cats }) => {
                 src={currentCat.image}
                 className="cat-show-img"
                 />
-                <h3>{currentCat.enjoys}</h3>
+                <div className='cat-show-text'>
+                    <h1>{currentCat.name}, <span>Age {currentCat.age}</span></h1>
+                    <h2>Enjoys: </h2>
+                    <h3>{currentCat.enjoys}</h3>
+                </div>
                 </>
             )}
         </main>

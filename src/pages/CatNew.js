@@ -24,7 +24,7 @@ const CatNew = ({ createCat }) => {
 
     return (
     <div className="cat-new-form">
-        <h1>Your New Mew!</h1>
+        <h1>New Mew Profile</h1>
     <Form>
         <FormGroup className="cat-new-form-group">
             <Label for="name">Name</Label>
@@ -54,9 +54,10 @@ const CatNew = ({ createCat }) => {
                 id="enjoys"
                 name="enjoys"
                 type="text"
+                maxLength={350}
                 onChange={handleChange}
                 value={newCat.enjoys}
-                placeholder='What does your kitty like to do for fun?'
+                placeholder='What does your kitty do for fun? (350 Chars Max)'
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
