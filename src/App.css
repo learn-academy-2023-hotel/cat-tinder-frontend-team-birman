@@ -190,7 +190,7 @@
   border: none;
 }
 
-/* CAT NEW */
+/* CAT NEW AND CAT EDIT*/
 
 .cat-new-form {
   text-align: center;
@@ -229,10 +229,12 @@
   margin: auto;
   max-width: 400px;
   width: 50vw;
+  font-family: 'Barlow', sans-serif;
 }
 
 .cat-new-form-group Input::placeholder {
   opacity: 0.7;
+  font-family: 'Barlow', sans-serif;
 }
 
 .cat-new-form-group Label {
@@ -275,6 +277,7 @@
 
 .cat-show-text h1 {
   color: #f8eef8;
+  font-family: 'Hedvig Letters Serif', serif;
 }
 
 .cat-show-text span {
@@ -285,11 +288,12 @@
 .cat-show-text h2 {
   color: #44225c;
   font-weight: bolder;
-
+  font-family: 'Barlow', sans-serif;
 }
 
 .cat-show-text h3 {
   color: #f8eef8;
+  font-family: 'Barlow', sans-serif;
 }
 
 .cat-show-cards button {
@@ -312,11 +316,23 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  text-align: center;
 }
 
 .not-background img {
   max-width: 500px;
   object-fit: contain;
+}
+
+.not-background button {
+  background-image: linear-gradient(to top, #572d75,#9167ad,#c18ae6);
+  border: none;
+  width: 100px;
+}
+
+.not-background button:hover {
+  background-image: linear-gradient(to top, #763c9f,#ae7bcf,#c18ae6);
+  border: none;
 }
 
 /* FOOTER */
