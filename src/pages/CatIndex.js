@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Button, Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
+import { Button } from "reactstrap";
 
 const CatIndex = ({ cats }) => {
   return (
@@ -8,25 +8,13 @@ const CatIndex = ({ cats }) => {
       <div className="cards-index-margin">
       {cats?.map((cat, index) => {
         return (
-          <Card
-            style={{
-              width: "18rem",
-              margin: 30,
-            }}
-            key={index}
-          >
-            <img alt="cat profile" src={cat.image} />
-            <CardBody>
-              <CardTitle tag="h5">{cat.name}</CardTitle>
-              <CardSubtitle className="mb-2 text-muted" tag="h6">
-                {cat.age}
-              </CardSubtitle>
-
+          <div className="cards-index-container" key={index}>
+            <img alt="cat profile" src={cat.image} className="index-image"/>
+            <h2>{cat.name}, {cat.age}</h2>
               <NavLink to={`/catshow/${cat.id}`} className="index-nav-link">
-                <Button>Details</Button>
+                <Button>Find Out More</Button>
               </NavLink>
-            </CardBody>
-          </Card>
+          </div>
         )
       })}
       </div>
