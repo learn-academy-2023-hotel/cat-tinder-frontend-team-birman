@@ -70,6 +70,13 @@
   margin-top: 6px;
 }
 
+.cat-logo-icon {
+  height: 30px;
+  object-fit: contain;
+  border-radius: 20px;
+  padding-bottom: 5px;
+}
+
 .nav-link {
   flex-direction: row;
   font-family: 'Lato', sans-serif;
