@@ -76,9 +76,8 @@ const CatNew = ({ createCat }) => {
             />
         </FormGroup>
         <Button onClick={handleSubmit} name="submit">Submit</Button>
+        <Button onClick={handleBack}>Back</Button>
     </Form>
-    <br/>
-    <Button onClick={handleBack}>Back</Button>
     </div>
     )
 }
