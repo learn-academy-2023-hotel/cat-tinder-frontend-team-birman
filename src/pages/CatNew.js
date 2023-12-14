@@ -22,6 +22,10 @@ const CatNew = ({ createCat }) => {
         navigate("/catindex")
     }
 
+    const handleBack = () => {
+        navigate("/catindex")
+    }
+
     return (
     <div className="cat-new-form">
         <h1>New Mew Profile</h1>
@@ -73,6 +77,8 @@ const CatNew = ({ createCat }) => {
         </FormGroup>
         <Button onClick={handleSubmit} name="submit">Submit</Button>
     </Form>
+    <br/>
+    <Button onClick={handleBack}>Back</Button>
     </div>
     )
 }

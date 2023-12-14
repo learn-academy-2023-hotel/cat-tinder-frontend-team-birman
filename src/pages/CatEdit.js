@@ -25,10 +25,15 @@ const CatEdit = ({ cats, updateCat }) => {
         navigate("/catindex")
     }
 
+    const handleBackShow = () => {
+        navigate(`/catshow/${currentCat.id}`)
+    }
+
     return (
-        <div>
+        <div className="cat-new-form">
+            <h1>Edit Cat Profile</h1>
         <Form>
-        <FormGroup>
+        <FormGroup className="cat-new-form-group">
             <Label for="name">Name</Label>
             <Input
                 id="name"
@@ -38,7 +43,7 @@ const CatEdit = ({ cats, updateCat }) => {
                 value={editCat.name}
             />
         </FormGroup>
-        <FormGroup>
+        <FormGroup className="cat-new-form-group">
             <Label for="age">Age</Label>
             <Input
                 id="age"
@@ -48,7 +53,7 @@ const CatEdit = ({ cats, updateCat }) => {
                 value={editCat.age}
             />
         </FormGroup>
-        <FormGroup>
+        <FormGroup className="cat-new-form-group">
             <Label for="enjoys">Enjoys</Label>
             <Input
                 id="enjoys"
@@ -58,7 +63,7 @@ const CatEdit = ({ cats, updateCat }) => {
                 value={editCat.enjoys}
             />
         </FormGroup>
-        <FormGroup>
+        <FormGroup className="cat-new-form-group">
             <Label for="image">Image</Label>
             <Input
                 id="image"
@@ -70,6 +75,8 @@ const CatEdit = ({ cats, updateCat }) => {
         </FormGroup>
         <Button onClick={handleSubmit} name="submit">Submit</Button>
     </Form>
+    <br/>
+    <Button onClick={handleBackShow}>Back</Button>
         </div>
     )
 }

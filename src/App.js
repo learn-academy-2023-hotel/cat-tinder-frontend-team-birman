@@ -10,8 +10,6 @@ import NotFound from "./pages/NotFound"
 import "./App.css"
 import { Routes, Route } from "react-router-dom"
 
-import mockCats from "./mockCats"
-
 const App = () => {
 
   useEffect(() => {
