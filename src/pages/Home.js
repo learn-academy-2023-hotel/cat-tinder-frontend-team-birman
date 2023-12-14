@@ -26,6 +26,7 @@ const Home = () => {
         </h4>
       </div>
     </div>
+    
   );
 };
 

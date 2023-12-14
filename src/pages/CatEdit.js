@@ -13,6 +13,7 @@ const CatEdit = ({ cats, updateCat }) => {
     enjoys: currentCat.enjoys,
     image: currentCat.image,
   });
+  
 
   const handleChange = (e) => {
     setEditCat({ ...editCat, [e.target.name]: e.target.value });

@@ -21,6 +21,7 @@ const CatShow = ({ cats, deleteCat }) => {
     deleteCat(currentCat.id);
     navigate("/catindex");
   };
+  
 
   return (
     <main className="cat-show-cards">

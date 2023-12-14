@@ -14,6 +14,7 @@ const CatIndex = ({ cats }) => {
               <h2>
                 {cat.name}, {cat.age}
               </h2>
+              
               <NavLink to={`/catshow/${cat.id}`} className="index-nav-link">
                 <Button>Find Out More</Button>
               </NavLink>
