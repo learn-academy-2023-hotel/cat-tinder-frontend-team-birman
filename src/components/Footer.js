@@ -16,7 +16,7 @@ const Footer = () => {
             className="footer-cat-logo"
             />
             </NavLink>
-            <p>&copy; 2023 created by <a href="https://www.linkedin.com/in/alexander-d-nguyen" target="_blank" className='foot-link'>Alex Nguyen</a> and <a href="https://www.linkedin.com/in/jdpinkard" target="_blank" className='foot-link'>Justin Pinkard</a> </p>
+            <p>&copy; 2023 created by <a href="https://www.linkedin.com/in/alexander-d-nguyen" target="_blank" rel="noreferrer" className='foot-link'>Alex Nguyen</a> and <a href="https://www.linkedin.com/in/jdpinkard" target="_blank" rel="noreferrer" className='foot-link'>Justin Pinkard</a> </p>
         </div>
     )
 }
