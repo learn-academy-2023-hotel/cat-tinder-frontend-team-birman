@@ -103,6 +103,7 @@
 /* Home Page */
 
 .home-background {
+  height:calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,7 +117,6 @@
 
 /* Hiding scrollbar for Chrome, Safari and Opera */
 .home-background::-webkit-scrollbar {
-  height:calc(100vh - 70px);
   display: none;
 }
 
@@ -206,6 +206,10 @@
 /* CAT NEW AND CAT EDIT*/
 
 .cat-new-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding-top: 40px;
   overflow-x: hidden;
@@ -221,7 +225,7 @@
 }
 
 .cat-new-form h1 {
-  padding: 30px;
+  padding-bottom: 30px;
   font-family: 'Lato', sans-serif;
   font-size: 35px;
   color: #f8eef8;
@@ -405,6 +409,16 @@
 
 @media screen and (max-width: 705px) {
 
+  /* HEADER */
+
+  .header-text {
+    display: none;
+  }
+
+  .cat-logo {
+    margin-left: 6px;
+  }
+
     /* CAT SHOW */
 
   .cat-show-border-box {
@@ -427,4 +441,23 @@
     width: 80px;
   }
 
+  /* CAT HOME */
+
+
+.home-background img {
+  width: 300px;
+}
+
+  /* CAT 404 */
+
+  .not-background img {
+    width: 300px;
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+  .galaxy {
+    display: none;
+  }
 }
