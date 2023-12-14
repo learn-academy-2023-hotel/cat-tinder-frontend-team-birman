@@ -39,6 +39,7 @@ const CatNew = ({ createCat }) => {
                 onChange={handleChange}
                 value={newCat.name}
                 placeholder="What is your cat's name?"
+                autoComplete="off"
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -50,6 +51,7 @@ const CatNew = ({ createCat }) => {
                 onChange={handleChange}
                 value={newCat.age}
                 placeholder='How old is your cat?'
+                autoComplete="off"
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -62,6 +64,7 @@ const CatNew = ({ createCat }) => {
                 onChange={handleChange}
                 value={newCat.enjoys}
                 placeholder='What does your kitty do for fun? (100 Chars Max)'
+                autoComplete="off"
             />
         </FormGroup>
         <FormGroup className="cat-new-form-group">
@@ -73,6 +76,7 @@ const CatNew = ({ createCat }) => {
                 onChange={handleChange}
                 value={newCat.image}
                 placeholder='https://i.imgur.com/HGAKgb6.jpeg'
+                autoComplete="off"
             />
         </FormGroup>
         <Button onClick={handleSubmit} name="submit">Submit</Button>
