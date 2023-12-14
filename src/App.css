@@ -67,10 +67,11 @@
   animation: fade-in-from-top 0.5s;
   height: 30px;
   object-fit: contain;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .nav-link {
+  flex-direction: row;
   font-family: 'Lato', sans-serif;
   color: #fff;
   font-size: 20px;
@@ -86,10 +87,15 @@
   color: #b1b6c8;
 }
 
+.cuddle {
+  height: 30px;
+  border-radius: 20px;
+  padding-bottom: 5px;
+}
+
 /* Home Page */
 
 .home-background {
-  height:calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,6 +109,7 @@
 
 /* Hiding scrollbar for Chrome, Safari and Opera */
 .home-background::-webkit-scrollbar {
+  height:calc(100vh - 70px);
   display: none;
 }
 
@@ -154,8 +161,6 @@
   width: 300px;
   border: 5px;
   border-radius: 20px;
-  /* background: radial-gradient(#c18ae6,#a777c7,#572d75); */
-  /* background-color: #9167ad; */
   margin: 30px;
   box-shadow: #44225c;
   text-align: center;
@@ -277,8 +282,6 @@
   width: 260px;
   height: 330px;
   border-radius: 20px;
-  position: relative;
-  overflow: hidden;
 }
 
 .cat-show-text {      
@@ -391,4 +394,30 @@
 
 .foot-link:hover {
   color: #b1b6c8;
+}
+
+@media screen and (max-width: 705px) {
+
+    /* CAT SHOW */
+
+  .cat-show-border-box {
+    flex-direction: column;
+  }
+
+  .cat-show-img {
+    align-self: center;
+    margin-top: 40px;
+  }
+
+  .cat-show-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+  }
+
+  .cat-show-cards button {
+    width: 80px;
+  }
+
 }
