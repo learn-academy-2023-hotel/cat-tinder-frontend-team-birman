@@ -2,6 +2,7 @@ import React from 'react'
 import { Nav, NavItem } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 import catLogo from "../assets/OhMyCatLogoText.png"
+import newProfile from "../assets/CatNewProfileInverse.png"
 import '../App.css'
 
 const Header = () => {
@@ -23,13 +24,18 @@ const Header = () => {
         <NavItem>
             <NavLink 
             to="/catindex" className="nav-link">
-            Cuddle Finder
+          Cuddle Finder
             </NavLink>
         </NavItem>
         <NavItem>
             <NavLink
             to="/catnew" className="nav-link">
-            New Mew
+            <img 
+            src={newProfile}
+            alt="New Profile logo"
+            className="cat-logo-icon"
+            />
+            <span>&nbsp;New Mew</span>
             </NavLink>
         </NavItem>
         </Nav>
