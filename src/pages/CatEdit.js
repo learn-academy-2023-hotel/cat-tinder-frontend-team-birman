@@ -8,12 +8,11 @@ const CatEdit = ({ cats, updateCat }) => {
   let currentCat = cats?.find((cat) => cat.id === +id);
 
   const [editCat, setEditCat] = useState({
-    name: currentCat.name,
-    age: currentCat.age,
-    enjoys: currentCat.enjoys,
-    image: currentCat.image,
+    name: currentCat?.name,
+    age: currentCat?.age,
+    enjoys: currentCat?.enjoys,
+    image: currentCat?.image,
   });
-  
 
   const handleChange = (e) => {
     setEditCat({ ...editCat, [e.target.name]: e.target.value });
@@ -31,10 +30,10 @@ const CatEdit = ({ cats, updateCat }) => {
   };
 
   return (
-    <div className="cat-new-form">
+    <div className="cat-new-and-edit-form">
       <h1>Edit Cat Profile</h1>
       <Form>
-        <FormGroup className="cat-new-form-group">
+        <FormGroup className="cat-new-and-edit-form-group">
           <Label for="name">Name</Label>
           <Input
             id="name"
@@ -44,7 +43,7 @@ const CatEdit = ({ cats, updateCat }) => {
             value={editCat.name}
           />
         </FormGroup>
-        <FormGroup className="cat-new-form-group">
+        <FormGroup className="cat-new-and-edit-form-group">
           <Label for="age">Age</Label>
           <Input
             id="age"
@@ -54,7 +53,7 @@ const CatEdit = ({ cats, updateCat }) => {
             value={editCat.age}
           />
         </FormGroup>
-        <FormGroup className="cat-new-form-group">
+        <FormGroup className="cat-new-and-edit-form-group">
           <Label for="enjoys">Enjoys</Label>
           <Input
             id="enjoys"
@@ -65,7 +64,7 @@ const CatEdit = ({ cats, updateCat }) => {
             maxLength={100}
           />
         </FormGroup>
-        <FormGroup className="cat-new-form-group">
+        <FormGroup className="cat-new-and-edit-form-group">
           <Label for="image">Image</Label>
           <Input
             id="image"

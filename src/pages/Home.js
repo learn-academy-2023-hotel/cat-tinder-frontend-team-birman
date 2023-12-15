@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import OMCLogo from "../assets/OhMyCatHome2.png";
+import OMCLogo from "../assets/OhMyCatHome.png";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
@@ -26,7 +26,6 @@ const Home = () => {
         </h4>
       </div>
     </div>
-    
   );
 };
 

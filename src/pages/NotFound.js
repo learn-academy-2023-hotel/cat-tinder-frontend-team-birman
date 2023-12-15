@@ -6,7 +6,7 @@ import Error from "../assets/404.png";
 
 const NotFound = () => {
   return (
-    <div className="not-background">
+    <div className="not-container">
       <img src={Error} alt="404 Error" />
       <NavLink to="/">
         <Button>Home</Button>
