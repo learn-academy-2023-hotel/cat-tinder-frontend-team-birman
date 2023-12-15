@@ -17,15 +17,17 @@ const App = () => {
 
   const [cats, setCats] = useState([]);
 
+  const url=`https://cat-tinder-backend-gy12.onrender.com`
+
   const readCats = () => {
-    fetch("http://localhost:3000/cats")
+    fetch(`${url}/cats`)
       .then((response) => response.json())
       .then((payload) => setCats(payload))
       .catch((errors) => console.log("Cat read errors:", errors));
   };
 
   const createCat = (createdCat) => {
-    fetch("http://localhost:3000/cats", {
+    fetch(`${url}/cats`, {
       body: JSON.stringify(createdCat),
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +40,7 @@ const App = () => {
   };
 
   const updateCat = (cat, id) => {
-    fetch(`http://localhost:3000/cats/${id}`, {
+    fetch(`${url}/cats/${id}`, {
       body: JSON.stringify(cat),
       headers: {
         "Content-Type": "application/json",
@@ -51,7 +53,7 @@ const App = () => {
   };
 
   const deleteCat = (id) => {
-    fetch(`http://localhost:3000/cats/${id}`, {
+    fetch(`${url}/cats/${id}`, {
       headers: {
         "Content-Type": "application/json",
       },
