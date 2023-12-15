@@ -262,50 +262,55 @@
   border: 3px solid white;
   border-radius: 20px;
   background-color: #9167ad;
-  max-width: 708px;
+  width: 1000px;
+  height: 550px;
   animation: fade-in 1.5s;
 }
 
 .cat-show-img {
   margin: 20px;
-  width: 260px;
-  height: 330px;
+  width: 400px;
+  height: 508px;
   border-radius: 20px;
 }
 
 .cat-show-text {      
-  max-width: 400px;
-  max-height: 534px;
-  padding: 20px; /* Add some padding for better readability */
+  width: 800px;
+  height: 550px;
+  padding: 20px;
   word-wrap: break-word;
 }
 
 .cat-show-text h1 {
   color: #f8eef8;
   font-family: 'Hedvig Letters Serif', serif;
+  font-size: 60px;
 }
 
 .cat-show-text span {
   color: #44225c;
-
 }
 
 .cat-show-text h2 {
   color: #44225c;
   font-weight: bolder;
   font-family: 'Barlow', sans-serif;
+  font-size: 50px;
 }
 
 .cat-show-text h3 {
   color: #f8eef8;
   font-family: 'Barlow', sans-serif;
+  font-size: 45px;
 }
 
 .cat-show-cards button {
   background-image: linear-gradient(to top, #572d75,#9167ad,#c18ae6);
   border: none;
-  width: 100px;
+  width: 150px;
+  height: 60px;
   margin: 15px 10px;
+  font-size: 25px;
 }
 
 .cat-show-cards button:hover {
@@ -384,6 +389,44 @@
   color: #b1b6c8;
 }
 
+
+@media screen and (max-width: 1050px) {
+
+  /* CAT SHOW */
+
+  .cat-show-border-box{
+    width: 708px;
+    height: 380px;
+  }
+
+  .cat-show-img {
+    width: 260px;
+    height: 330px;
+  }
+
+  .cat-show-text {      
+    width: 400px;
+    height: 534px;
+  }
+
+  .cat-show-cards button {
+    width: 100px;
+  }
+
+  .cat-show-text h1 {
+    font-size: 45px;
+  }
+
+  .cat-show-text h2 {
+    font-size: 35px;
+  }
+
+  .cat-show-text h3 {
+    font-size: 30px;
+  }
+
+}
+
 @media screen and (max-width: 705px) {
 
   /* HEADER */
@@ -398,24 +441,44 @@
 
   /* CAT SHOW */
 
+  .cat-show-cards {
+    padding-top: 20px;
+  }
+
   .cat-show-border-box {
     flex-direction: column;
+    width: auto;
+    height: 620px;
   }
 
   .cat-show-img {
+    margin: 10px;
     align-self: center;
-    margin-top: 40px;
   }
 
   .cat-show-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 350px;
+    width: 350px;
+  }
+
+  .cat-show-text h1 {
+    font-size: 40px;
+  }
+
+  .cat-show-text h2 {
+    font-size: 30px;
+  }
+
+  .cat-show-text h3 {
+    font-size: 28px;
   }
 
   .cat-show-cards button {
     width: 80px;
+    height: 40px;
+    font-size: 16px;
   }
 
   /* CAT HOME */
@@ -443,6 +506,31 @@
   .header-cuddle-img, .header-new-profile-img {
     padding-bottom: 0;
     padding-top: 1px;
+  }
+
+  /* CAT SHOW */
+
+  .cat-show-text {
+    width: 280px;
+    padding-left: 30px;
+  }
+
+  .cat-show-text h1 {
+    font-size: 30px;
+  }
+
+  .cat-show-text h2 {
+    font-size: 28px;
+  }
+
+  .cat-show-text h3 {
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .cat-show-cards button {
+    width: 71px;
+    margin: 15px 2px;
   }
 
   /* CAT HOME */
