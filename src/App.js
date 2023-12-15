@@ -14,7 +14,6 @@ const App = () => {
   useEffect(() => {
     readCats();
   }, []);
-  
 
   const [cats, setCats] = useState([]);
 
